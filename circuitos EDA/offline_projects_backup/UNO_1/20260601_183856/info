@@ -1,0 +1,66 @@
+{
+  "uuid": "1208a674a8ee46f3d42ea54f3ecdb57b",
+  "path": "Offline/UNO_1",
+  "name": "UNO_1",
+  "content": "",
+  "created_at": "2026-06-01 18:27:43",
+  "updated_at": "2026-06-01 18:38:56",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "af80201a1091cc2485540fa7e1c39d9d",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "36ca0a4f4deccaaf49c06c98b11d4b27",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "3ec77201bbcd4ecd8722658d581a4e60": 1,
+        "d0bec020e7af457da5d0be3dd71babf0": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "POWER",
+          1,
+          "HDR-F-2.54_1X2",
+          "H1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "LCSC",
+            "Supplier Part": "C49661"
+          }
+        ],
+        [
+          "RASPBERRY PI PICO 2W",
+          1,
+          "COMM-SMD_L51.0-W21.0-P2.54_PICOW",
+          "U1",
+          {
+            "Manufacturer Part": "Raspberry Pi Pico 2W",
+            "Manufacturer": "Raspberry Pi(树莓派)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C42394205"
+          }
+        ]
+      ],
+      "updateTime": 1780331936,
+      "createTime": 1780331263,
+      "histories": [],
+      "created_at": "2026-06-01 18:27:43",
+      "updated_at": "2026-06-01 18:38:56"
+    }
+  ],
+  "sort": [],
+  "title": "UNO_1",
+  "foldername": "UNO_1",
+  "schfilename": "UNO_1.json",
+  "schfilemtime": 1780331936064
+}

@@ -1,0 +1,374 @@
+{
+  "uuid": "1208a674a8ee46f3d42ea54f3ecdb57b",
+  "path": "Offline/UNO_1",
+  "name": "UNO_1",
+  "content": "",
+  "created_at": "2026-06-01 18:27:43",
+  "updated_at": "2026-06-02 17:37:46",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "454d9c7dba9cd91dc72d0d6cb5580910",
+      "title": "sin placa",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "3ec77201bbcd4ecd8722658d581a4e60": 2,
+        "d216a1b546d94e57a85908bdff5a9da1": 1,
+        "76f479892b90460285b83969d26752c9": 1,
+        "b6fb6114cfca41a190a0b1428b284100": 1,
+        "158925e5e86741a08dd83e59cb17367d": 1,
+        "71a8d586f92841908d1f75a546eac38e": 1,
+        "a68dc5e6a9944c46b7604648a43dcd65": 1,
+        "80ca087724a04d85b047800042f68171": 2,
+        "318022925ecc401195dc99cfca619f98": 1,
+        "d0bec020e7af457da5d0be3dd71babf0": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "Libera_bloqueo",
+          1,
+          "PULSADOR-2P1T-6X6MM",
+          "1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "Carga aire",
+          1,
+          "PULSADOR-2P1T-6X6MM",
+          "2",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "POWER",
+          1,
+          "HDR-F-2.54_1X2",
+          "H1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "LCSC",
+            "Supplier Part": "C49661"
+          }
+        ],
+        [
+          "panel solar",
+          1,
+          "HDR-F-2.54_1X2",
+          "H2",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "LCSC",
+            "Supplier Part": "C49661"
+          }
+        ],
+        [
+          "SERVO",
+          1,
+          "HDR-M-2.54_1X3",
+          "J1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "LCSC",
+            "Supplier Part": "C180248"
+          }
+        ],
+        [
+          "RASPBERRY PI PICO 2W",
+          1,
+          "COMM-SMD_L51.0-W21.0-P2.54_PICOW",
+          "U1",
+          {
+            "Manufacturer Part": "Raspberry Pi Pico 2W",
+            "Manufacturer": "Raspberry Pi(树莓派)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C42394205"
+          }
+        ],
+        [
+          "MPU6050-TH",
+          1,
+          "COMM-TH_MPU6050-TH",
+          "U2",
+          {
+            "Manufacturer Part": "MPU6050-TH",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900132629"
+          }
+        ],
+        [
+          "MINI-SD-CARD-MODULE COPY",
+          1,
+          "MINI-SD-CARD-MODULE",
+          "U3",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "TP4056 module",
+          1,
+          "TP4056",
+          "U4",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "18650",
+          1,
+          "MY-18650-02_18650",
+          "U5",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "POWER 9V",
+          1,
+          "KF128V-2P",
+          "U6",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "OLED-SSD1306",
+          1,
+          "OLED-SSD1306-128X64-I2C",
+          "U7",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ]
+      ],
+      "updateTime": 1780413992,
+      "createTime": 1780413992,
+      "histories": [],
+      "created_at": "2026-06-02 17:26:32",
+      "updated_at": "2026-06-02 17:26:32"
+    },
+    {
+      "uuid": "af80201a1091cc2485540fa7e1c39d9d",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "391058cc99bf85cb95ce32753b5bfcd0",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "d0bec020e7af457da5d0be3dd71babf0": 1,
+        "3ec77201bbcd4ecd8722658d581a4e60": 2,
+        "d216a1b546d94e57a85908bdff5a9da1": 1,
+        "76f479892b90460285b83969d26752c9": 1,
+        "b6fb6114cfca41a190a0b1428b284100": 1,
+        "158925e5e86741a08dd83e59cb17367d": 1,
+        "71a8d586f92841908d1f75a546eac38e": 1,
+        "a68dc5e6a9944c46b7604648a43dcd65": 1,
+        "80ca087724a04d85b047800042f68171": 2,
+        "318022925ecc401195dc99cfca619f98": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "Libera_bloqueo",
+          2,
+          "PULSADOR-2P1T-6X6MM",
+          "1,1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "Carga aire",
+          2,
+          "PULSADOR-2P1T-6X6MM",
+          "2,2",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "POWER",
+          2,
+          "HDR-F-2.54_1X2",
+          "H1,H1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "LCSC",
+            "Supplier Part": "C49661"
+          }
+        ],
+        [
+          "panel solar",
+          2,
+          "HDR-F-2.54_1X2",
+          "H2,H2",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "LCSC",
+            "Supplier Part": "C49661"
+          }
+        ],
+        [
+          "SERVO",
+          2,
+          "HDR-M-2.54_1X3",
+          "J1,J1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "LCSC",
+            "Supplier Part": "C180248"
+          }
+        ],
+        [
+          "RASPBERRY PI PICO 2W",
+          2,
+          "COMM-SMD_L51.0-W21.0-P2.54_PICOW",
+          "U1,U1",
+          {
+            "Manufacturer Part": "Raspberry Pi Pico 2W",
+            "Manufacturer": "Raspberry Pi(树莓派)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C42394205"
+          }
+        ],
+        [
+          "MPU6050-TH",
+          2,
+          "COMM-TH_MPU6050-TH",
+          "U2,U2",
+          {
+            "Manufacturer Part": "MPU6050-TH",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900132629"
+          }
+        ],
+        [
+          "MINI-SD-CARD-MODULE COPY",
+          2,
+          "MINI-SD-CARD-MODULE",
+          "U3,U3",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "TP4056 module",
+          2,
+          "TP4056",
+          "U4,U4",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "18650",
+          2,
+          "MY-18650-02_18650",
+          "U5,U5",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "POWER 9V",
+          2,
+          "KF128V-2P",
+          "U6,U6",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "OLED-SSD1306",
+          2,
+          "OLED-SSD1306-128X64-I2C",
+          "U7,U7",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ]
+      ],
+      "updateTime": 1780414666,
+      "createTime": 1780331263,
+      "histories": [],
+      "created_at": "2026-06-01 18:27:43",
+      "updated_at": "2026-06-02 17:37:46"
+    }
+  ],
+  "sort": [
+    "454d9c7dba9cd91dc72d0d6cb5580910"
+  ],
+  "title": "UNO_1",
+  "foldername": "UNO_1",
+  "schfilename": "UNO_1.json",
+  "schfilemtime": 1780414666771
+}

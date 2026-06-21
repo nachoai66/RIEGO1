@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Agua por Ultrasonidos</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background: #eef2f3; margin-top: 40px; }
+        .card { background: white; max-width: 450px; margin: 0 auto; padding: 25px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        
+        /* Contenedor del depósito visual */
+        .deposito-grafico { width: 120px; height: 180px; border: 4px solid #34495e; border-radius: 0 0 15px 15px; margin: 20px auto; position: relative; background: #fcfcfc; overflow: hidden; }
+        .agua { width: 100%; background: #3498db; position: absolute; bottom: 0; transition: height 0.5s ease-in-out; }
+        
+        .btn { display: inline-block; padding: 12px 24px; font-size: 15px; font-weight: bold; border-radius: 6px; color: white; margin: 10px; cursor: pointer; border: none; }
+        .btn-on { background-color: #2ecc71; }
+        .btn-off { background-color: #e74c3c; }
+        .status { font-size: 20px; font-weight: bold; margin: 10px 0; }
+        .badge { display: inline-block; padding: 5px 10px; border-radius: 4px; font-size: 14px; background: #95a5a6; color: white; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>📊 Estado del Depósito</h2>
+    
+    <!-- Animación del nivel de agua -->
+    <div class="deposito-grafico">
+        <div id="nivel-agua" class="agua" style="height: 0%;"></div>
+    </div>
+    
+    <div id="porcentaje-texto" class="status">Cargando nivel... 0%</div>
+    <div id="distancia-texto" class="badge">Medición: -- cm</div>
+    <div id="bomba-texto" class="status" style="margin-top: 15px; color: #7f8c8d;">Bomba: Estado desconocido</div>
+
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+
+    <h3>Controles Manuales</h3>
+    <button class="btn btn-on" onclick="controlarBomba('on')">Encender Bomba</button>
+    <button class="btn btn-off" onclick="controlarBomba('off')">Apagar Bomba</button>
+</div>
+
+<script>
+    async function actualizarEstado() {
+        try {
+            let response = await fetch('/api/status');
+            let data = await response.json();
+            
+            // Actualizar nivel gráfico y textos
+            document.getElementById('nivel-agua').style.height = data.porcentaje + '%';
+            document.getElementById('porcentaje-texto').innerText = "Nivel del agua: " + data.porcentaje + "%";
+            
+            if(data.distancia_cm) {
+                document.getElementById('distancia-texto').innerText = "Distancia del sensor: " + data.distancia_cm + " cm";
+            } else {
+                document.getElementById('distancia-texto').innerText = "Error de lectura";
+            }
+
+            // Actualizar texto de la bomba
+            let bTexto = document.getElementById('bomba-texto');
+            bTexto.innerText = "Bomba: " + data.bomba;
+            bTexto.style.color = (data.bomba === "ENCENDIDA") ? "#2ecc71" : "#e74c3c";
+            
+        } catch (error) {
+            console.error("Error al conectar con la ESP32", error);
+        }
+    }
+
+    function controlarBomba(accion) {
+        fetch('/bomba/' + accion).then(() => {
+            setTimeout(actualizarEstado, 200);
+        });
+    }
+
+    // Refrescar cada 2 segundos para ver cambios rápidos en el llenado
+    setInterval(actualizarEstado, 2000);
+    actualizarEstado();
+</script>
+
+</body>
+</html>
