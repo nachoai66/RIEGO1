@@ -1,1 +1,3 @@
-
+La estructura de la skill debe ser clara y coherente.
+  * Descripción clara del propósito u objetivo de esa skill, puede ser genérico o más concreto, dependiendo del contexto.
+  * Apuntar y referenciar a componentes que esten contenidos dentro de la carpeta donde se integra toda la habilidad, esto es scripts, imágenes, audios videos, modelos 3d gcdos de impresion...lo que sea de ayuda. A ser posible utiliza formatos lo mas cercanos posible a los datos que el modelo pueda digerir con menor dificultad, json, csv, md.....
